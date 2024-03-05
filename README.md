@@ -98,12 +98,12 @@ Now you can create or open Robot project files in the local repository using the
 
 The "Visual Studio Code Basics" hyperlink redirects to a webpage called "Visual Studio Code Basics and WPILib Extension" (https://docs.wpilib.org/en/stable/docs/software/vscode-overview/vscode-basics.html#visual-studio-code-basics-and-the-wpilib-extension), which is part of the "Programming Basics" Tutorial.
 
-Read this page to get familiar with how to call the WPILib command from the command set list.  Click the "Next" button a the bottom of the page to go to next page where a description of each of the WPILib commands is found.  Click the "Next" button to to to the next page, which starts with a discussion on Robot Program and how a Robot Base Class is selected.  Pay particular attention to the "Timed Robot Template". 
+Read this page to get familiar with how to call the WPILib command from the command set list.  Click the "Next" button a the bottom of the page to go to next page where a description of each of the WPILib commands is found.  Click the "Next" button to to to the next page, which starts with a discussion on Robot Program and how a Robot Base Class is selected.  Pay particular attention to the "Command Robot Template". 
 
 
 # Creating a New Robot Project
   
-Eventually, a section called "Creating a New WPILib Project" is found toward the middle of the the Robot Program Page (https://docs.wpilib.org/en/stable/docs/software/vscode-overview/creating-robot-program.html).  Perform the tasks stated in Visual Studio Code. 
+Eventually, a section called "Creating a New WPILib Project" is found toward the middle of the the Robot Program Page (https://docs.wpilib.org/en/stable/docs/software/vscode-overview/creating-robot-program.html).  Unless you are going to start from scratch and delete the code in the 2024_Robot_Code directory, you should not need to create a "new" Project.  But if you do then perform the tasks stated in Visual Studio Code documetation above. 
 
 While doing these tasks, a "New Project Creator Window" will pop up.  Select the following on the first row:
 
@@ -126,7 +126,7 @@ After creating the project in Visual Studio Code, continue reading to the webpag
 
 # 3rd Party Libraries
 
-At this point in the process, you should be on the 3rd Party Libraries Page of the Web instructions(https://docs.wpilib.org/en/stable/docs/software/vscode-overview/3rd-party-libraries.html). Read down to "Managing VS Code Libraries".  In VS Code, use the "Manage Vendor Libraries > Manage Current Libraries" to show you that:
+At this point in the process, you should be on the 3rd Party Libraries Page of the Web instructions(https://docs.wpilib.org/en/stable/docs/software/vscode-overview/3rd-party-libraries.html). This is an important step for you if you are getting the 2024_Robot_Code from GitHub.  Since you subsequently installed WPILib VS Code, the necessary libaries for running all of the devices used in the 2024_Robot_Code have not been installed.  You must install the necessary libraries before the code will compile (build).  Read down to "Managing VS Code Libraries".  In VS Code, use the "Manage Vendor Libraries > Manage Current Libraries" to show you that:
 
 WPILib-New-Commands
 
@@ -154,20 +154,17 @@ CTRE-Pheonix
 RevLib
 WPILib-New-Commands
 
-# Copy Last Years Robot Code
+# Last Years Robot Code
 
-To put last years code into the project.  Last year's robot code in isn the Robot_Code directory.  Open the file Robot.java and select "Raw" button in the upper right.  Right click on the "Raw" display, select "Save as", navigate to the Project's "robot" directory,
-  
-  {Drive_Letter}\Users\Public\GitHub\FRC_2023-24\2023_Robot_Code\src\main\java\frc\robot
-
-Type in the name Robot.java, and select Ok to save it over the current Robot.java file.
-In the above directory, there will now be two files:
-
-Main.java
-Robot.java
-
-The "Robot.java" file contains Last Year's "Robot.java" file. 
+Last year's robot code is in the 2023_Robot_Code folder.  If you open the folder for 2023_Robot_Code folder in WPILib VS Code, you can examine that project.  That project will have many errors due to the fact that the 3rd party libraries have changed this year.  If you want it to build, code changes are needed to make it compatable with the 2024 3rd party libraries. 
 
 # Git Update
 
-Save any open files in the project.  To to GitHub Desktop and commit the changes by putting "Created Project for Last Year's Robot" in the Summary box (lower left) and clicking on the "Commit" button (bottom left). Push the change to the remote repository by clicking on the "Push Origin" button on the top (right side) of the GitHub Desktop window.
+Remember to select your developement branch for Source Control and to save and "Commit" often.  Push the change to the remote repository when finished by clicking on the "Push Origin" button on the top (right side) of the GitHub Desktop window or by sync'ing in the WPILib Source Control pane.
+
+After you have tested your deveopment code and you feel that the code is good enough for competition, the next step is to check for any changes that have been made on the "main" branch while you were devloping your code.  To do this, make a "pull" request in GitHub Web or with GitHub Desktop.  The request is to pull the changes from the "main" branch into your {username}Dev Branch.  If there are no changes identified in the pull request, the you make a "pull" request to pull the changes in your {username}Dev branch into the "main" branch.  After reviewing the changes that will be made to the "main" branch (they should be only your changes made during your development), accept the pull request and have it committed to the "main" branch.
+
+Before "pull"ing new changes into the "main" branch, you must brief the Drive Team on the changes and how they affect the operation of the Robot.
+
+If the "pull" request to pull the changes from the "main" branch into your {username}Dev branch shows that changes have been made in the "main" branch that you did not consider when developing your change, you must accept the changes and modify your development code to work with the "main" branch changes.  Afterwards, you can make the "pull" request to pull your {username}Dev changes into the "main" branch and there should be no conflict.
+
