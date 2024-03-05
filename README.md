@@ -21,48 +21,32 @@ Welcome to the LIGHTSABERS Robot Code Repository for the FRC 2023-24 Season. Thi
 
 # Preliminaries with Git
 
-First of all, I'm assuming that you are reading this README.md file from the "main" branch on the LIGHTSABERS Web-based GetHub site (i.e. the remote Github repositiory).  This repository should not be cloned from the "main" branch.  The first thing to do is to create a new branch by clicking on the "branch" icon at the top of this repository.
+First of all, I'm assuming that you are reading this README.md file from the "main" branch on the LIGHTSABERS Web-based GetHub site (i.e. the remote Github repositiory).  The "main" branch is the branch that holds the "competition" code.  This code should always compile and be deployable to the Robot on a moments notice.  So, do not development new code in the "main" branch.  The first thing to do is to create a new code development branch by clicking on the "branch" icon at the top of this repository.
 ![image](https://user-images.githubusercontent.com/54441806/205994006-44c873f8-bac8-4605-8b4d-bd86b5a21ced.png)
-This will bring up a "branch" page, and on the right side of this page is a green button called "New Branch".  Click on "New Branch" button, type "{yourname}Dev" in the Branch Name, make sure that the source is set to the "main" branch, and then click "Create Branch".  
+This will bring up a "branch" page, and on the right side of this page is a green button called "New Branch".  Click on "New Branch" button, then type "{username}Dev" in the Branch Name.  You can choose any {username} that is relevant to you, I usually choose my first initial and the first 4 letters of my last name (e.g. cvarn).  After selecting your development branch name, make sure that the "source" is set to the "main" branch, and then click "Create Branch".  
 ![image](https://user-images.githubusercontent.com/54441806/205996651-fa7224c6-71c3-4abe-b60e-2d3e37ea0f4c.png)
 The resulting "Overview" page will then show that there is an Active branch called "{yourname}Dev".  You can click on the "{yourname}Dev" branch and you will see that it has the same files as were in the "main" branch.
 ![image](https://user-images.githubusercontent.com/54441806/205998157-9fa5980c-fed6-4cf2-befc-6f007a0b72eb.png)
   
-At this point, I will assume that you are reading this README.md file from the "{yourname}Dev" branch.  You are now ready to setup your computer to receive your local repository of the FRC_2023-24 Code.  To avoid having this repository proliferate on your computer, it will be stored in the Public User's workspace.  Create a new storage folder on your Windows computer to act as your local Git repository for the FRC 2023-24 Code:
+At this point, I will assume that you are reading this README.md file from the "{yourname}Dev" branch.  You are now ready to setup your computer to receive your local repository of the FRC_2023-24 Code.  To avoid having this repository proliferate on your computer, it will be stored in common directory.  I recommend the Public User's workspace.  Create a new storage folder on your Windows computer to hold all of your Git projects (ex. GitHub).
   
-"{Drive_Letter}:\Users\Public\GitHub\FRC_2023-24"
+"{Drive_Letter}:\Users\Public\GitHub"
 
-Note: if this location already exists you must cleanup the computer.  If this is the case, follow the instructions at [Zero to Robot: Uninstalling](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html#uninstalling).
+There are a couple of options for cloning the Online Repository locally on your computer:
+1.  (Recommended)  Use the GitHub Desktop.
+2.  Download to a Zip file.
+   
+There is a green button called "Code" on this webpage above the top right-hand corner of this README.  Right click on this button and the various options for "cloneing" this repository are offered.
 
-There is a green button called "Code" on this webpage above the top right-hand corner of this README.  Right click on this button and the option to "clone" this repository to your computer is offered.  Do this with GitHub desktop (install GitHub Desktop if you don't already have it).  GitHub Desktop will ask you where you want the local version of the repository to be stored.  Use the location that you just created above.  When it is complete switch the GetHub Desktop branch to be the {username}Dev branch.   
+If you are using the GetHub Desktop, you will need to select the storage location you created above and make sure that the URL is pointing to the FRC_2023-24 Online Repository before clicking Clone. You can also down load the Repository as a Zip file.  This will detach the Repository from this Online Git account.  Any updates that you make are private and cannot be pushed back to this account, which is where the "competition" code resides.   
 
 # Robot Home
 
-The FRC_2023-24 directory has this ReadMe file and a folder called "2023_Robot_Code".  The 2023_Robot_Code directory provided as an example and a reference for last years Robot code.  All Robot code projects for this year will created in a new directory called "2024_Robot_Code". In order to create this directory, start WPILib and create a new project template for a "Command Robot" using the techniques described in The "Visual Studio Code Basics" hyperlink redirects to a webpage called "Visual Studio Code Basics and WPILib Extension" (https://docs.wpilib.org/en/stable/docs/software/vscode-overview/vscode-basics.html#visual-studio-code-basics-and-the-wpilib-extension), which is part of the "Programming Basics" Tutorial.
-
-Generate the WPILib "template" Project with the following attributes:
-    Project Type = Template 
-    Language = java
-    Project Base = Command Robot
-    Base Folder = .../GitHub/FRC_2023-24
-    Project Name = 2024_Robot_Code
-    Team Number = 3660
-    Do *NOT* enable Desktop Support
-
-After the Project completes building the FRC_2023-24 directory will have:
-   1. This ReadMe file,
-   2. The "2023_Robot_Code" directory, and
-   3. The "2024_Robot_Code" directory.
-
-In the WPILib select Source Control on the left-hand wall.
-
-This new directory will be for the 2023-24 year will be created in this folder.  Each will have it's own folder, which will be named in a manner that provides a basic idea of what the code does.
-
-Last year's robot code will be in the folder "Robot_Code/Last_Year.
+The FRC_2023-24 directory has this README file, a license file, a folder called "2023_Robot_Code" and another folder called "2024_Robot_Code".  The 2023_Robot_Code folder is provided as an example and a reference for last years Robot code.  All Robot code projects for this year will created in the folder called "2024_Robot_Code".  Each of these folders represents a WPILib Java project.  
 
 # Zero to Robot
 
-Starting with Step 2 of the Zero to Robot instructions (https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html) install the WPILib libaries.  Since we are programming Java and we are not building the WPILib libraries, it is not necessary to perform the steps for the "Additional C++ Installation for Simulation".  When the instructions on this web page have been completed, the following will be installed:
+Starting with Step 2 of the Zero to Robot instructions (https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html) install the WPILib Visual Studio Code libaries.  Since we are programming Java and we are not building the WPILib libraries, it is not necessary to perform the steps for the "Additional C++ Installation for Simulation".  When the instructions on this web page have been completed, the following will be installed:
   
 Visual Studio Code - The supported IDE for 2019 and later robot code development. The offline installer sets up a separate copy of VS Code for WPILib development, even if you already have VS Code on your machine. This is done because some of the settings that make the WPILib setup work may break existing workflows if you use VS Code for other projects.
 
@@ -81,6 +65,8 @@ VS Code Extensions - WPILib extensions for robot code development in VS Code
 Continue to the next page in the instructions and select the "Visual Studio Code Basics" hyperlink.
 
 # GitHub Revisited
+
+Start WPILib VS Code application and open the folder called "{Drive_Letter}:\Users\Public\GitHub\FRC_2023-24\2024_Robot_Code".  Before doing anything else select the "Source Control" icon on the left-hand wall of the WPILib Application.  You can then open one of the java source files in the project and examine its code.  This code will not build because the current 2024_Robot_Code is using a number of devices that require 3rd party libaries.  Read the FRC documation on installing 3rd party libraries found at:  https://docs.wpilib.org/en/stable/docs/software/vscode-overview/3rd-party-libraries.html#rd-party-libraries.
 
 Near the top of this repository is a green button called "Code" next to the word "About".  Left click on "Code" and select the "Open with GitHub Desktop" option.  If the GitHub Desktop doesn't exist it will download it and ask you to log-in.  If you don't have an account, create one for free and repeat the process of left clicking on "Code" and logging-in to the GitHub Desktop.
 
