@@ -103,7 +103,7 @@ Read this page to get familiar with how to call the WPILib command from the comm
 
 # Creating a New Robot Project
   
-Eventually, a section called "Creating a New WPILib Project" is found toward the middle of the the Robot Program Page (https://docs.wpilib.org/en/stable/docs/software/vscode-overview/creating-robot-program.html).  Unless you are going to start from scratch and delete the code in the 2024_Robot_Code directory, you should not need to create a "new" Project.  But if creating a new project from scratch is your intention, then perform the tasks stated in Visual Studio Code documetation above. 
+Eventually, a section called "Creating a New WPILib Project" is found toward the middle of the the Robot Program Page (https://docs.wpilib.org/en/stable/docs/software/vscode-overview/creating-robot-program.html).  Unless you are going to start from scratch and delete the 2024_Robot_Code folder, you should not need to create a "new" Project.  But if creating a new project from scratch is your intention (The 2024_Robot_Code had to come from somewhere.  Right?), then perform the tasks stated in Visual Studio Code documetation above. 
 
 While doing these tasks, a "New Project Creator Window" will pop up.  Select the following on the first row:
 
@@ -112,10 +112,10 @@ Language:      java,
 Base:          Command Robot
 
 Other item on the creator page are filled in as:
-Base Folder:  {Drive Letter}:/Users/Public/GitHub/FRC_2023-24
+Base Folder:  {Drive Letter}:/Users/Public/GitHub
 Use the "Select a new project folder" button to graphically select the Base Folder
 
-Project Name: Last_Year,
+Project Name: {New_Project_Name},
 Team Number:  3660.
 
 Then click on the "Generate Project" button.
