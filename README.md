@@ -38,11 +38,22 @@ There are a couple of options for cloning the Online Repository locally on your 
    
 There is a green button called "Code" on this webpage above the top right-hand corner of this README.  Right click on this button and the various options for "cloneing" this repository are offered.
 
+![image](https://user-images.githubusercontent.com/54441806/206072601-60adb60e-19bf-4245-85d4-27e3497e33dd.png)
+---------------------------------------------------------------------------------------------------------------
 If you are using the GetHub Desktop, you will need to select the storage location you created above and make sure that the URL is pointing to the FRC_2023-24 Online Repository before clicking Clone. You can also down load the Repository as a Zip file.  This will detach the Repository from this Online Git account.  Any updates that you make are private and cannot be pushed back to this account, which is where the "competition" code resides.   
+
+When GitHub Desktop opens, then it will default to looking at the "main" branch.  Switch it to the "{yourname}Dev" branch.
+
+![image](https://user-images.githubusercontent.com/54441806/206074279-9abeab05-935d-456a-8e2c-fa2f417320b7.png)
+
+This repository now exists locally on your computer at:
+
+"{Drive_Letter}:\Users\Public\GitHub\FRC_2023-24"
+
 
 # Robot Home
 
-The FRC_2023-24 directory has this README file, a license file, a folder called "2023_Robot_Code" and another folder called "2024_Robot_Code".  The 2023_Robot_Code folder is provided as an example and a reference for last years Robot code.  All Robot code projects for this year will created in the folder called "2024_Robot_Code".  Each of these folders represents a WPILib Java project.  
+The FRC_2023-24 folder on your computer (local) has this README file, a license file, a folder called "2023_Robot_Code" and another folder called "2024_Robot_Code".  The 2023_Robot_Code folder is provided as an example and a reference for last years Robot code.  All Robot code projects for this year will created in the folder called "2024_Robot_Code".  Each of these folders represents a WPILib Java project.  
 
 # Zero to Robot
 
@@ -68,22 +79,11 @@ Continue to the next page in the instructions and select the "Visual Studio Code
 
 Start WPILib VS Code application and open the folder called "{Drive_Letter}:\Users\Public\GitHub\FRC_2023-24\2024_Robot_Code".  Before doing anything else select the "Source Control" icon on the left-hand wall of the WPILib Application.  This will change the left window pane to show GitHub Source control status and commands.  At the top of this pane, below "Source Control Repositories", you will see your current "local" repository (FRC_2023-24) and the current local "branch" ("main") for that repository.  Click on the branch and, at the bottom of the popup window, you will see your remote (on-line) development branch, which is called "Origin/{username}Dev".  Select your remote development branch and the local branch will then change to be your development branch.  At this point any changes you make to the project are being made to your "development" branch code.  Your changes will not change the "main" branch competition code until you have completed your developement, tested it, and have approved it as ready for competition.
 
-While you can make code changes, test your builds, deploy to, and even the robot from the code in your 2024_Robot_Code folder; you should save often.   
+While you can make code changes, test your builds, deploy to, and even the robot from the code in your 2024_Robot_Code folder; you should save often.  Since you code is also managed byt software source control, you should periodically commit your changes to source control (Git) using the "Commit" button on the Source Control pane.  When you "Commit" the changes, you need to provide a comment above it to be stored as a record of what was was changed in this "Commit" operation.  So you should "Commit" often enough to keep the Comment of what was changed small.
+
 You can then open one of the java source files in the project and examine its code.  This code will not build because the current 2024_Robot_Code is using a number of devices that require 3rd party libaries.  Read the FRC documation on installing 3rd party libraries found at:  https://docs.wpilib.org/en/stable/docs/software/vscode-overview/3rd-party-libraries.html#rd-party-libraries.
 
-Near the top of this repository is a green button called "Code" next to the word "About".  Left click on "Code" and select the "Open with GitHub Desktop" option.  If the GitHub Desktop doesn't exist it will download it and ask you to log-in.  If you don't have an account, create one for free and repeat the process of left clicking on "Code" and logging-in to the GitHub Desktop.
-
-![image](https://user-images.githubusercontent.com/54441806/206072601-60adb60e-19bf-4245-85d4-27e3497e33dd.png)
----------------------------------------------------------------------------------------------------------------
-When GitHub Desktop opens, then it will default to looking at the "main" branch.  Switch it to the "{yourname}Dev" branch.
-
-![image](https://user-images.githubusercontent.com/54441806/206074279-9abeab05-935d-456a-8e2c-fa2f417320b7.png)
-
-This repository now exists locally on your computer at:
-
-"{Drive_Letter}:\Users\Public\GitHub\FRC_2023-24"
-
-Any files that you add or modify in this directory (the local repository) are registered with GitHub, and any changes that are different from the Remote Repository on the Web are shown in the GitHub Desktop.  For example: In the directory above, if you open the README.md file in a text editor (ex. wordpad), change the spelling of a word, and then save the file back to the repository, the GitHub Desktop will change to look like this:
+Any files that you add or modify in this directory (the local repository) are registered with GitHub when you "Commit".  The code in the Local Repository is now different from the Remote Repository on the Web.  For example: In the directory above, if you open the README.md file in a text editor (ex. wordpad), change the spelling of a word, and then save the file, and "Commit" it back to the Local Repository, the GitHub Desktop will change to look like this:
 
 ![image](https://user-images.githubusercontent.com/54441806/206082745-758bfe6e-c9ea-4745-9dae-d1e5575a19e8.png)
 
@@ -92,6 +92,10 @@ To backup the changes to your local repository to the Remote Repository on the W
 ![image](https://user-images.githubusercontent.com/54441806/206085043-25b620a6-297c-477d-adf6-412e7a08d93c.png)
 
 Now you can create or open Robot project files in the local repository using the Visual Studio Code editor and when you get all done you can commit them to Git storage and back them up to the Git remote storage on the Web. 
+
+Near the top of this repository is a green button called "Code" next to the word "About".  Left click on "Code" and select the "Open with GitHub Desktop" option.  If the GitHub Desktop doesn't exist it will download it and ask you to log-in.  If you don't have an account, create one for free and repeat the process of left clicking on "Code" and logging-in to the GitHub Desktop.
+
+
 
 # Programming Basics
 
