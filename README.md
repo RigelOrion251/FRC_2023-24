@@ -103,7 +103,7 @@ Read this page to get familiar with how to call the WPILib command from the comm
 
 # Creating a New Robot Project
   
-Eventually, a section called "Creating a New WPILib Project" is found toward the middle of the the Robot Program Page (https://docs.wpilib.org/en/stable/docs/software/vscode-overview/creating-robot-program.html).  Unless you are going to start from scratch and delete the code in the 2024_Robot_Code directory, you should not need to create a "new" Project.  But if you do then perform the tasks stated in Visual Studio Code documetation above. 
+Eventually, a section called "Creating a New WPILib Project" is found toward the middle of the the Robot Program Page (https://docs.wpilib.org/en/stable/docs/software/vscode-overview/creating-robot-program.html).  Unless you are going to start from scratch and delete the code in the 2024_Robot_Code directory, you should not need to create a "new" Project.  But if creating a new project from scratch is your intention, then perform the tasks stated in Visual Studio Code documetation above. 
 
 While doing these tasks, a "New Project Creator Window" will pop up.  Select the following on the first row:
 
