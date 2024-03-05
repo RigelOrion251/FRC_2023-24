@@ -15,7 +15,7 @@ Welcome to the LIGHTSABERS Robot Code Repository for the FRC 2023-24 Season. Thi
 - [Programming Basics](#programming-basics)
 - [Creating a New Robot Project](#creating-a-new-robot-project)
 - [3rd Party Libraries](#3rd-party-libraries)
-- [Copy Last Years Robot Code](#copy-last-years-robot-code)
+- [Copy Last Years Robot Code](#last-years-robot-code)
 - [Git Update](#git-update)
 
 
@@ -79,11 +79,11 @@ Continue to the next page in the instructions and select the "Visual Studio Code
 
 Start WPILib VS Code application and open the folder called "{Drive_Letter}:\Users\Public\GitHub\FRC_2023-24\2024_Robot_Code".  Before doing anything else select the "Source Control" icon on the left-hand wall of the WPILib Application.  This will change the left window pane to show GitHub Source control status and commands.  At the top of this pane, below "Source Control Repositories", you will see your current "local" repository (FRC_2023-24) and the current local "branch" ("main") for that repository.  Click on the branch and, at the bottom of the popup window, you will see your remote (on-line) development branch, which is called "Origin/{username}Dev".  Select your remote development branch and the local branch will then change to be your development branch.  At this point any changes you make to the project are being made to your "development" branch code.  Your changes will not change the "main" branch competition code until you have completed your developement, tested it, and have approved it as ready for competition.
 
-While you can make code changes, test your builds, deploy to, and even the robot from the code in your 2024_Robot_Code folder; you should save often.  Since you code is also managed byt software source control, you should periodically commit your changes to source control (Git) using the "Commit" button on the Source Control pane.  When you "Commit" the changes, you need to provide a comment above it to be stored as a record of what was was changed in this "Commit" operation.  So you should "Commit" often enough to keep the Comment of what was changed small.
+While you can make code changes, test your builds, deploy to, and even run the robot from the code in your 2024_Robot_Code folder; you should save often.  Since you code is also managed byt software source control, you should periodically commit your changes to source control (Git) using the "Commit" button on the Source Control pane.  When you "Commit" the changes, you need to provide a comment above it to be stored as a record of what was was changed in this "Commit" operation.  So you should "Commit" often enough to keep the Comment of what was changed small.
 
-You can then open one of the java source files in the project and examine its code.  This code will not build because the current 2024_Robot_Code is using a number of devices that require 3rd party libaries.  Read the FRC documation on installing 3rd party libraries found at:  https://docs.wpilib.org/en/stable/docs/software/vscode-overview/3rd-party-libraries.html#rd-party-libraries.
+You can then open one of the java source files in the project and examine its code.  This code probably will not build using the WPILib on your computer because you probably have not added 3rd party libaries required to run the devices that this version of the 2024_Robot_Code is using.  Read the FRC documation on installing [3rd party libraries](#3rd-party-libraries) found at:  https://docs.wpilib.org/en/stable/docs/software/vscode-overview/3rd-party-libraries.html#rd-party-libraries.
 
-Any files that you add or modify in this directory are registered with GitHub.  The code in the Local Repository is now different from the Remote Repository on the Web.  For example: In the directory above, if you open the README.md file in a text editor (ex. wordpad), change the spelling of a word, and then save the file; GitHub Desktop will change to look like this:
+Any files that you add or modify in this folder are registered with GitHub.  The 2024_Robot_Code in the Local Repository is now different from the Remote Repository on the Web.  For example: In the directory above, if you open the README.md file in a text editor (ex. wordpad), change the spelling of a word, and then save the file; GitHub Desktop will change to look like this:
 
 ![image](https://user-images.githubusercontent.com/54441806/206082745-758bfe6e-c9ea-4745-9dae-d1e5575a19e8.png)
 
