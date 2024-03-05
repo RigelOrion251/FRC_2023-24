@@ -83,7 +83,7 @@ While you can make code changes, test your builds, deploy to, and even the robot
 
 You can then open one of the java source files in the project and examine its code.  This code will not build because the current 2024_Robot_Code is using a number of devices that require 3rd party libaries.  Read the FRC documation on installing 3rd party libraries found at:  https://docs.wpilib.org/en/stable/docs/software/vscode-overview/3rd-party-libraries.html#rd-party-libraries.
 
-Any files that you add or modify in this directory (the local repository) are registered with GitHub when you "Commit".  The code in the Local Repository is now different from the Remote Repository on the Web.  For example: In the directory above, if you open the README.md file in a text editor (ex. wordpad), change the spelling of a word, and then save the file, and "Commit" it back to the Local Repository, the GitHub Desktop will change to look like this:
+Any files that you add or modify in this directory are registered with GitHub.  The code in the Local Repository is now different from the Remote Repository on the Web.  For example: In the directory above, if you open the README.md file in a text editor (ex. wordpad), change the spelling of a word, and then save the file, and "Commit" it back to the Local Repository, the GitHub Desktop will change to look like this:
 
 ![image](https://user-images.githubusercontent.com/54441806/206082745-758bfe6e-c9ea-4745-9dae-d1e5575a19e8.png)
 
