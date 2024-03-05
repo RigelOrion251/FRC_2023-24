@@ -17,6 +17,7 @@ Welcome to the LIGHTSABERS Robot Code Repository for the FRC 2023-24 Season. Thi
 - [3rd Party Libraries](#3rd-party-libraries)
 - [Copy Last Years Robot Code](#last-years-robot-code)
 - [Git Update](#git-update)
+- [Git Again](#git-again)
 
 
 # Preliminaries with Git
@@ -162,9 +163,12 @@ Last year's robot code is in the 2023_Robot_Code folder.  If you open the folder
 
 Remember to select your developement branch for Source Control and to save and "Commit" often.  Push the change to the remote repository when finished by clicking on the "Push Origin" button on the top (right side) of the GitHub Desktop window or by sync'ing in the WPILib Source Control pane.
 
-After you have tested your deveopment code and you feel that the code is good enough for competition, the next step is to check for any changes that have been made on the "main" branch while you were devloping your code.  To do this, make a "pull" request in GitHub Web or with GitHub Desktop.  The request is to pull the changes from the "main" branch into your {username}Dev Branch.  If there are no changes identified in the pull request, the you make a "pull" request to pull the changes in your {username}Dev branch into the "main" branch.  After reviewing the changes that will be made to the "main" branch (they should be only your changes made during your development), accept the pull request and have it committed to the "main" branch.
+After you have tested your development code and you feel that the code is good enough for competition, the next step is to check for any changes that have been made on the "main" branch while you were devloping your code.  To do this, make a "pull" request in GitHub Web or with GitHub Desktop.  The request is to pull the changes from the "main" branch into your {username}Dev Branch.  If there are no changes identified in the pull request, the you make a "pull" request to pull the changes in your {username}Dev branch into the "main" branch.  After reviewing the changes that will be made to the "main" branch (they should be only your changes made during your development), accept the pull request and have it committed to the "main" branch.
 
 Before "pull"ing new changes into the "main" branch, you must brief the Drive Team on the changes and how they affect the operation of the Robot.
 
 If the "pull" request to pull the changes from the "main" branch into your {username}Dev branch shows that changes have been made in the "main" branch that you did not consider when developing your change, you must accept the changes and modify your development code to work with the "main" branch changes.  Afterwards, you can make the "pull" request to pull your {username}Dev changes into the "main" branch and there should be no conflict.
 
+# Git Again
+
+If you decide that you want to develop another feature of the Robot, you must prepare your {username}Dev branch to be compatible with the competition code.  This is sometimes called "Re-basing" your development branch.  If changes have been made to the competition robot code since the last time you delivered (pulled) your development code to the "main" branch, the your development branch must be re-based.  The process is simple -- just make a pull request from the "main" branch to your "{username}Dev" branch and accept all of the changes.  Afterwards, ifhe code in your {username}Dev branch does not build, it is because new devices have been added to the competion robot having libraries that you do not have your computer.  Find the [3rd Party libraries](#3rd-party-libraries) and install them.  The code will then build and is ready for you to begin your new developement activity.  
