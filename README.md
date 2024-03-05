@@ -83,18 +83,15 @@ While you can make code changes, test your builds, deploy to, and even the robot
 
 You can then open one of the java source files in the project and examine its code.  This code will not build because the current 2024_Robot_Code is using a number of devices that require 3rd party libaries.  Read the FRC documation on installing 3rd party libraries found at:  https://docs.wpilib.org/en/stable/docs/software/vscode-overview/3rd-party-libraries.html#rd-party-libraries.
 
-Any files that you add or modify in this directory are registered with GitHub.  The code in the Local Repository is now different from the Remote Repository on the Web.  For example: In the directory above, if you open the README.md file in a text editor (ex. wordpad), change the spelling of a word, and then save the file, and "Commit" it back to the Local Repository, the GitHub Desktop will change to look like this:
+Any files that you add or modify in this directory are registered with GitHub.  The code in the Local Repository is now different from the Remote Repository on the Web.  For example: In the directory above, if you open the README.md file in a text editor (ex. wordpad), change the spelling of a word, and then save the file; GitHub Desktop will change to look like this:
 
 ![image](https://user-images.githubusercontent.com/54441806/206082745-758bfe6e-c9ea-4745-9dae-d1e5575a19e8.png)
 
-To backup the changes to your local repository to the Remote Repository on the Web, click on the "push" button a the top of the GitHub Window.
+Even though the file has changed, it is not stored in Git until a "Commit" is completed and has a relevant change comment. After the change has been "Committed" to the Local Repository, it can be backed-up, or sync'ed, to the Remote Repository on the Web by clicking on the "push" button a the top of the GitHub Window.  This whole example shows that source control can be handled by GitHub Desktop if necessary, but the Commit and Push (sync) operations are normally done in the WPILib VS Code Source Control Pane.   
 
 ![image](https://user-images.githubusercontent.com/54441806/206085043-25b620a6-297c-477d-adf6-412e7a08d93c.png)
 
-Now you can create or open Robot project files in the local repository using the Visual Studio Code editor and when you get all done you can commit them to Git storage and back them up to the Git remote storage on the Web. 
-
-Near the top of this repository is a green button called "Code" next to the word "About".  Left click on "Code" and select the "Open with GitHub Desktop" option.  If the GitHub Desktop doesn't exist it will download it and ask you to log-in.  If you don't have an account, create one for free and repeat the process of left clicking on "Code" and logging-in to the GitHub Desktop.
-
+Now you can create or open Robot project files in the local repository using the Visual Studio Code editor and when you get all done you can commit them to Git storage and back them up (or sync them) to the Git remote storage on the Web. 
 
 
 # Programming Basics
