@@ -97,6 +97,10 @@ public Command playNote(IntakeSubsystem _Intake) {
     m_launcherRunning = false;
   }
 
+  public double getVolume(){
+     return ((Constants.Launcher.kLeftPower + Constants.Launcher.kRightPower)/2.0);
+  }
+
   @Override
   public void periodic() { // this method will be called once per scheduler run
     // set the launcher motor powers based on whether the launcher is on or not
