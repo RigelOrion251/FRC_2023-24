@@ -42,8 +42,8 @@ public class RobotContainer {
   private final LauncherSubsystem m_launcher = new LauncherSubsystem();
 
   // Replace with CommandPS4Controller or CommandJoystick if needed
-  private final GenericHID m_driverController =
-      new GenericHID(OperatorConstants.kDriverControllerPort);
+  private final XboxController m_driverController =
+      new XboxController(OperatorConstants.kDriverControllerPort);
 
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {

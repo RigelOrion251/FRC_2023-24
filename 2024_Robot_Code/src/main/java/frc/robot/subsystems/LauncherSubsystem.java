@@ -69,7 +69,8 @@ public Command launchNote(IntakeSubsystem _Intake) {
              * then start the Intake Feeder to push the Note up
              * into the Launcher Wheels.
              */
-            if(m_timer.get() > Constants.Launcher.kTimeToLaunch){
+            m_launcherRunning = true;
+             if(m_timer.get() > Constants.Launcher.kTimeToLaunch){
               _Intake.moveNote(Constants.Launcher.kFeederSpeed);
             }
           }
