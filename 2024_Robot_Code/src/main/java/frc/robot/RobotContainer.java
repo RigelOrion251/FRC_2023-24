@@ -12,7 +12,6 @@ import edu.wpi.first.math.geometry.Rotation2d;
 import edu.wpi.first.math.geometry.Translation2d;
 import edu.wpi.first.math.trajectory.TrajectoryConfig;
 import edu.wpi.first.math.trajectory.TrajectoryGenerator;
-import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.Constants.AutoConstants;
@@ -56,9 +55,9 @@ public class RobotContainer {
         // Turning is controlled by the X axis of the right stick.
         new RunCommand(
             () -> m_robotDrive.drive(
-                -MathUtil.applyDeadband(((XboxController) m_driverController).getLeftY(), OIConstants.kDriveDeadband),
-                -MathUtil.applyDeadband(((XboxController) m_driverController).getLeftX(), OIConstants.kDriveDeadband),
-                -MathUtil.applyDeadband(((XboxController) m_driverController).getRightX(), OIConstants.kDriveDeadband),
+                -MathUtil.applyDeadband((m_driverController).getLeftY(), OIConstants.kDriveDeadband),
+                -MathUtil.applyDeadband((m_driverController).getLeftX(), OIConstants.kDriveDeadband),
+                -MathUtil.applyDeadband((m_driverController).getRightX(), OIConstants.kDriveDeadband),
                 true, true),
             m_robotDrive));
 
