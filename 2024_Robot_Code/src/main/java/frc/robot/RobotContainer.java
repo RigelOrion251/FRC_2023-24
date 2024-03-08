@@ -14,7 +14,6 @@ import edu.wpi.first.math.trajectory.TrajectoryConfig;
 import edu.wpi.first.math.trajectory.TrajectoryGenerator;
 import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.XboxController;
-import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.Constants.AutoConstants;
 import frc.robot.Constants.DriveConstants;
@@ -100,10 +99,12 @@ public class RobotContainer {
 //        .whileTrue(new RunCommand(() -> m_launcher.runLauncher(), m_launcher));
 
     new JoystickButton(m_driverController, XboxController.Button.kA.value)
-        .onTrue(m_launcher.playNote(m_intake));
+        .onTrue(m_launcher.launchNote(m_intake));
         
 
-    SmartDashboard.putNumber("Counter", m_launcher.getVolume());
+    /* Output the Launcher Wheel power to the dashboard for display. */
+    SmartDashboard.putNumber("Counter", m_launcher.getLeftLauchPower());
+    SmartDashboard.putNumber("Counter", m_launcher.getRightLauchPower());
   }
 
   /**
